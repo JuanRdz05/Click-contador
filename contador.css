@@ -1,0 +1,162 @@
+#Sumando, #Restando, #reinicio
+{
+    display:none; /*Esto hace que oculte la imagen al princpio*/
+}
+
+@font-face
+{
+    font-family: 'Funnel';
+    src: url(FONTS/FUNNEL/Funnel_Display/static/FunnelDisplay-Regular.ttf)
+    , url(FONTS/FUNNEL/Funnel_Display/static/FunnelDisplay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Funnel';
+    src: url(FONTS/FUNNEL/Funnel_Display/static/FunnelDisplay-Regular.ttf)
+    , url(FONTS/FUNNEL/Funnel_Display/FunnelDisplay-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+
+    font-family: 'Lexend';
+    src: url(FONTS/OTRO/Lexend_Mega/LexendMega-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sumar-clase
+{
+    border-style:initial;
+    border-radius: 10%;
+}
+
+h1{
+    font-family:'Lexend';
+    padding: 10px;
+    margin: 50px;
+    font-size: 50px;
+    font-weight: 500;
+    width: 700px;
+    
+}
+
+.Contenedos-Botones
+{
+    padding: 10px;
+    margin:10px;
+    width: 500px;
+    height: 20px;
+
+    
+
+}
+.contador-clase
+{
+    font-size: 40px;
+    background-color:rgba(206, 175, 134, 0.685); 
+    border-radius: 20px;
+    width: 600px;
+    border-style:double;
+    border-color:rgb(206, 175, 134); 
+    border-width:10px;
+}
+
+.Boton-ocultar
+{
+    margin: 20px;
+    border-radius: 10px;
+    background-color:rgb(206, 175, 134);
+    font-size:20px;
+    border-style:solid;
+    border-color:rgb(177, 151, 118);
+    border-width: 4px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.Boton-ocultar:hover
+{
+    background-color: rgb(177, 151, 118); /* Cambia el color de fondo */
+    border-color: rgb(206, 175, 134); /* Cambia el color del borde */
+    color: rgb(110, 95, 75); /* Cambia el color del texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    transform: scale(1.05); /* Escala el botón ligeramente */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.Boton-suma
+{
+    background-color:rgb(206, 175, 134);
+    font-size:20px;
+    border-style:solid;
+    border-color:rgb(177, 151, 118);
+    border-radius: 10px;
+    padding:3px;
+    width:100px;
+    border-width: 4px;
+    transition: all 0.3s ease;
+}
+
+.Boton-suma:hover{
+
+    background-color: rgb(177, 151, 118); /* Cambia el color de fondo */
+    border-color: rgb(206, 175, 134); /* Cambia el color del borde */
+    color: rgb(110, 95, 75); /* Cambia el color del texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    transform: scale(1.05); /* Escala el botón ligeramente */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.Boton-resta
+{
+    font-size:20px;
+    background-color:rgb(206, 175, 134);
+    border-style:solid;
+    border-color:rgb(177, 151, 118);
+    border-width:4px;
+    border-radius: 10px;
+    width: 100px;
+    padding: 3px;
+    transition: all 0.3s ease;
+    
+}
+
+.Boton-resta:hover
+{
+    background-color: rgb(177, 151, 118); /* Cambia el color de fondo */
+    border-color: rgb(206, 175, 134); /* Cambia el color del borde */
+    color: rgb(110, 95, 75); /* Cambia el color del texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    transform: scale(1.05); /* Escala el botón ligeramente */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+.Imagen-pibble
+{
+    border-radius:20px;
+}
+
+
+.Imagen-gato
+{
+    border-radius: 20px;
+}
+
+p
+{
+    font-family:'Lexend';
+
+}
+body{
+    font-family:'Funnel';
+    text-align: center;
+    place-items: center;
+    height: 10vh;
+    margin: 0;
+    display: grid;
+    background-color: antiquewhite;
+}
