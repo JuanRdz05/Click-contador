@@ -3,6 +3,8 @@
     display:none; /*Esto hace que oculte la imagen al princpio*/
 }
 
+
+
 @font-face
 {
     font-family: 'Funnel';
@@ -146,6 +148,43 @@ h1{
     border-radius: 20px;
 }
 
+.Mover-boton-oscuro {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    position: fixed; /* Posiciona el contenedor fuera del flujo normal */
+    top: 0; /* Lo coloca en la parte superior */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 10px;
+    margin-right: 40px;
+    margin-top: 10px;
+    z-index: 1000; /* Añade un poco de espacio alrededor del botón */
+}
+
+.Boton-oscuro
+{
+    place-items: right;
+    text-align: center;
+    font-size: 14px;
+    background-color:rgb(206, 175, 134);
+    border-style:solid;
+    border-color:rgb(177, 151, 118);
+    border-width:4px;
+    border-radius: 10px;
+    width: 100px;
+    padding: 3px;
+    transition: all 0.3s ease;
+}
+
+.Boton-oscuro:hover
+{
+    background-color: rgb(177, 151, 118); /* Cambia el color de fondo */
+    border-color: rgb(206, 175, 134); /* Cambia el color del borde */
+    color: rgb(110, 95, 75); /* Cambia el color del texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    transform: scale(1.05); /* Escala el botón ligeramente */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
 p
 {
     font-family:'Lexend';
@@ -158,5 +197,45 @@ body{
     height: 10vh;
     margin: 0;
     display: grid;
+    transition: background-color 0.3s ease, color 0.3s ease;
     background-color: antiquewhite;
+}
+
+.contador-clase,
+.Boton-suma,
+.Boton-resta,
+.Boton-ocultar,
+.Boton-oscuro {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+body.modo-oscuro
+{
+    background-color: #121212;
+    color:#fff
+}
+
+body.modo-oscuro.contador-clase
+{
+    background-color:#121212;
+    border-color:#555555;
+    color:#fff;
+}
+
+body.modo-oscuro .Boton-suma,
+body.modo-oscuro .Boton-resta,
+body.modo-oscuro .Boton-ocultar,
+body.modo-oscuro .Boton-oscuro {
+    background-color: #444444; /* Fondo oscuro para botones */
+    border-color: #666666; /* Borde más claro */
+    color: #ffffff; /* Texto blanco */
+}
+
+body.modo-oscuro .Boton-suma:hover,
+body.modo-oscuro .Boton-resta:hover,
+body.modo-oscuro .Boton-ocultar:hover,
+body.modo-oscuro .Boton-oscuro:hover {
+    background-color: #666666; /* Fondo oscuro al pasar el mouse */
+    border-color: #888888; /* Borde más claro al pasar el mouse */
+    color: #ffffff; /* Texto blanco */
 }
